@@ -5,12 +5,9 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.externals import joblib
 import pickle
-import pkg_resources 
-
-pkg_resources.get_distribution("Flask ").version 
 
 
-print(Flask.__version__) 
+
 
 
 # load the model from disk
@@ -65,4 +62,4 @@ def predict():
 
 
 if __name__ == '__main__':
-	app.run(debug=True)
+	app.run(debug=False)
